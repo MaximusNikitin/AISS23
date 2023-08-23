@@ -1,16 +1,22 @@
 import os
 import sys
 import uic
-import qdarkstyle
 from os import system
+#######################
+
+#############################
 from PyQt6 import QtWidgets
 from PyQt6.QtWidgets import QApplication, QMainWindow, QHeaderView, QDialog, QStackedWidget
-from PyQt6.uic import loadUi
+
 from Ui_AISS import *
-from PyQt6 import QtCore, QtGui
+
 # IMPORT Custom widgets
 from Custom_Widgets.Widgets import *
 import sqlite3
+
+###################################
+
+from qt_material import apply_stylesheet
 
 ############################SHADOW ELEMENTS##############################################
 shadow_elements = {
@@ -23,6 +29,9 @@ flag = 0
 
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
+        
+        
+
         # self = QMainWindow class
         # self.ui = Ui_MainWindow / user interface class
         QMainWindow.__init__(self)
@@ -52,6 +61,9 @@ class MainWindow(QMainWindow):
         self.ui.addRowBtn_2.clicked.connect(lambda: self.ui.searchWidget.collapseMenu())
         self.ui.addRowBtn_3.clicked.connect(lambda: self.ui.searchWidget.collapseMenu())
         self.ui.searchBtn.clicked.connect(self.loaddata)
+        
+        
+        
         ######################### NAVIGATION ############################################
         self.ui.clientsBtn.clicked.connect(
             lambda: self.ui.menuStackedWidget.setCurrentWidget(self.ui.tool_page_clients))
@@ -341,13 +353,14 @@ class MainWindow(QMainWindow):
             effect.setYOffset(0)
             effect.setColor(QColor(0, 0, 0, 255))
             getattr(self.ui, x).setGraphicsEffect(effect)
-
+        
         self.show()
         self.ui.lineEdit.echoMode()
-
+        
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    
     window = MainWindow()
     window.show()
     sys.exit(app.exec_())
