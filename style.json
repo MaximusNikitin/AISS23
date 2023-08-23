@@ -1,0 +1,192 @@
+{
+  "QMainWindow": [
+    {
+      "tittle": "Autosale",
+      "icon": "C:/Users/ASUS/PycharmProjects/AISS23/Icons/kindpng_2102307.png",
+      "frameless": true,
+      "transluscentBg": true,
+      "sizeGrip": "pushButton",
+      "navigation": [
+        {
+          "minimize": "minBtn",
+          "close": "closeBtn",
+          "restore": [
+            {
+              "buttonName": "restoreBtn",
+              "normalIcon": ":/icons/Icons/square.svg",
+              "maximizedIcon": ":/icons/Icons/copy.svg"
+            }
+          ],
+          "moveWindow": "headContainer",
+          "tittleBar": "headContainer"
+        }
+      ]
+    }
+  ],
+  "QCustomSlideMenu": [
+    {
+      "name": "leftMenuContainer",
+      "defaultSize": [
+        {
+          "width": 170,
+          "height": "parent"
+        }
+      ],
+      "collapsedSize": [
+        {
+          "width": 45,
+          "height": "parent"
+        }
+      ],
+      "expandedSize": [
+        {
+          "width": 150,
+          "height": "parent"
+        }
+      ],
+      "toggleButton": [
+        {
+          "buttonName": "menuBtn",
+          "icons": [
+            {
+              "whenMenuIsCollapsed": ":/icons/Icons/align-justify.svg",
+              "whenMenuIsExpanded": ":/icons/Icons/chevron-left.svg"
+            }
+          ]
+        }
+      ],
+      "menuTransitionAnimation": [
+        {
+          "animationDuration": 500,
+          "animationEasingCurve": "OutBack"
+        }
+      ]
+    },
+    {
+      "name": "moveContainer",
+      "defaultSize": [
+        {
+          "width": 220,
+          "height": "parent"
+        }
+      ],
+      "collapsedSize": [
+        {
+          "width": 50,
+          "height": "parent"
+        }
+      ],
+      "expandedSize": [
+        {
+          "width": 220,
+          "height": "parent"
+        }
+      ],
+      "toggleButton": [
+        {
+          "buttonName": "chevronButton",
+          "icons": [
+            {
+              "whenMenuIsCollapsed": ":/icons/Icons/chevrons-right.svg",
+              "whenMenuIsExpanded": ":/icons/Icons/chevrons-left.svg"
+            }
+          ]
+        }
+      ],
+      "menuTransitionAnimation": [
+        {
+          "animationDuration": 550,
+          "animationEasingCurve": "OutBack"
+        }
+      ]
+    },
+    {
+      "name": "searchWidget",
+      "defaultSize": [
+        {
+          "width": 0,
+          "height": "parent"
+        }
+      ],
+      "collapsedSize": [
+        {
+          "width": 0,
+          "height": "parent"
+        }
+      ],
+      "expandedSize": [
+        {
+          "width": 290,
+          "height": "parent"
+        }
+      ],
+      "toggleButton": [
+        {
+          "buttonName": "searchBtnTool"
+        }
+      ],
+      "menuTransitionAnimation": [
+        {
+          "animationDuration": 600,
+          "animationEasingCurve": "OutBack"
+        }
+      ]
+    }
+  ],
+  "QPushButtonGroup": [
+    {
+      "Buttons": [
+        "clientsBtn",
+        "carBtn",
+        "saleBtn",
+        "menuBtn",
+        "settingsBtn",
+        "autorBtn"
+      ],
+      "Style": [
+        {
+          "Active": "background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0.187902, y2:0.184, stop:0 rgba(10, 0, 19, 255), stop:0.850604 rgba(0, 21, 34, 255));",
+          "NotActive": "background-color: transparent;"
+        }
+      ]
+    },
+    {
+      "Buttons": [
+        "searchBtnTool",
+        "addRowBtn",
+        "deleteBtn",
+        "saveBtn",
+        "deleteRowBtn_2",
+        "addRowBtn_2",
+        "saveBtn_2",
+        "searchBtn_2",
+        "searchBtn_3",
+        "addRowBtn_3",
+        "deleteRowBtn_3",
+        "saveBtn_3"
+      ],
+      "Style": [
+        {
+          "Active": "background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0 rgba(145, 164, 191, 255), stop:0.935733 rgba(43, 102, 219, 255));",
+          "NotActive": "background-color: transparent;"
+        }
+      ]
+    },
+    {
+      "Buttons": [
+        "chevronButton",
+        "updateBtn",
+        "minBtn",
+        "restoreBtn",
+        "closeBtn",
+        "searchBtn"
+      ],
+      "Style": [
+        {
+          "Active": "background-color: rgb(219, 242, 255);",
+          "NotActive": "background-color: transparent;"
+        }
+      ]
+    }
+  ]
+}

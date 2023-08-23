@@ -1,0 +1,79 @@
+
+############################SHADOW ELEMENTS##############################################
+############################SHADOW ELEMENTS##############################################
+############################SHADOW ELEMENTS##############################################
+############################SHADOW ELEMENTS##############################################
+############################SHADOW ELEMENTS##############################################
+############################SHADOW ELEMENTS##############################################
+############################SHADOW ELEMENTS##############################################
+
+def contactsData(self):
+        #Connect to Database
+        connection = sqlite3.connect('contacts.db')
+        cur = connection.cursor()
+
+        rowcount = cur.execute('''SELECT COUNT(*) FROM contacts''').fetchone()[0]
+
+        self.contactsTableWidget.setRowCount(rowcount)
+        cur.execute('''SELECT  * FROM contacts''')
+
+        for row, contacts in enumerate(cur):
+            for column, contact in enumerate(contacts):
+                self.contactsTableWidget.setItem(row, column, QtGui.QTableWidgetItem(str(contact)))
+
+        cur.close()
+        connection.commit()
+        connection.close()
+self.ui.updateBtn.clicked.connect(refreshData)
+
+
+
+
+
+
+
+
+
+
+
+
+loaddata
+loaddata
+loaddata
+loaddata
+sqlite3.IntegrityError: datatype mismatch
+sqlite3.IntegrityError: datatype mismatch
+sqlite3.IntegrityError: datatype mismatch
+sqlite3.IntegrityError: datatype mismatch
+sqlite3.IntegrityError: datatype mismatch
+sqlite3.IntegrityError: datatype mismatch
+################################ ADD ROW ####################################################
+        self.ui.addRowBtn.clicked.connect(lambda: self.ui.tableWidget.insertRow(self.ui.tableWidget.currentRow()))
+        self.ui.addRowBtn_2.clicked.connect(lambda: self.ui.tableWidget_2.insertRow(self.ui.tableWidget_2.currentRow()))
+
+        ################################ DELETE ROW ##################################################
+        self.ui.deleteBtn.clicked.connect(lambda: self.ui.tableWidget.removeRow(self.ui.tableWidget.currentRow()))
+        self.ui.deleteRowBtn_2.clicked.connect(lambda: self.ui.tableWidget_2.removeRow(self.ui.tableWidget_2.currentRow()))
+        ################################# COPY ROW ###################################################
+
+self.ui.updateBtn.clicked.connect(self.loaddata)
+self.ui.updateBtn.clicked.connect(self.loaddata)
+self.ui.updateBtn.clicked.connect(self.loaddata)
+self.ui.updateBtn.clicked.connect(self.loaddata)
+connection = sqlite3.connect("data.sqlite")
+    cur = connection.cursor()
+
+connection.close()
+connection.close()
+connection.close()
+connection.close()
+connection = sqlite3.connect("data.sqlite")
+    cur = connection.cursor()
+connection = sqlite3.connect("data.sqlite")
+    cur = connection.cursor()
+connection = sqlite3.connect("data.sqlite")
+    cur = connection.cursor()
+connection = sqlite3.connect("data.sqlite")
+    cur = connection.cursor()
+connection = sqlite3.connect("data.sqlite")
+    cur = connection.cursor()
